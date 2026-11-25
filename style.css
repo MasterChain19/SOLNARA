@@ -1,0 +1,658 @@
+
+/* =========================
+   1. DESIGN
+========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #090909;
+    color: white;
+}
+
+
+/* =========================
+   2. NAVIGATION BAR
+========================= */
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 84%;
+    z-index: 1000;
+
+    padding: 5px 8%;
+
+    background: rgba(10, 10, 10, 0.35);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+
+
+/* =========================
+   SOLNARA - LOGO
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #ff2424;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+.logo-image {
+    width: 110px;
+    height: 85px;
+
+    object-fit: contain;
+    display: block;
+
+    filter:
+        drop-shadow(0 0 5px rgba(160, 50, 255, 0.7))
+        drop-shadow(0 0 12px rgba(130, 30, 255, 0.4));
+}
+
+
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ff2424;
+}
+
+
+/* =========================
+   3. HERO SECTION
+========================= */
+
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-size: cover;
+    background-position: center 120px;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+
+/* =========================
+   4. WEBSITE TITLE
+========================= */
+
+
+h1 {
+    font-size: 65px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+h1 span {
+    color: #b44aff;
+    text-shadow: 0 0 15px rgba(180, 74, 255, 0.5);
+}
+
+
+p {
+    color: #aaaaaa;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   5. WEBSITE BUTTON
+========================= */
+
+button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: white;
+    color: #e50914;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* tag */
+
+.hero-label {
+    color: #ff2424;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+/* button */
+
+.hero h1 {
+    font-size: 65px;
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #ff2424;
+}
+
+/* SUBHEADING */
+
+.hero h2 {
+    color: white;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+/* DESCRIPTION */
+
+.hero-description {
+    color: #bbbbbb;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+/* button */
+
+.hero-button {
+    background: #e50914;
+    color: white;
+    border: 1px solid #ff2424;
+
+    padding: 17px 35px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: white;
+    color: #e50914;
+    transform: translateY(-3px);
+}
+
+
+/* CONTRACT ADDRESS BOX */
+
+
+/* =========================
+   CONTRACT ADDRESS - DARK THEME
+========================= */
+
+.contract-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    width: 100%;
+    max-width: 540px;
+
+    padding: 18px;
+    margin: 20px 0;
+
+    background: rgba(10, 10, 10, 0.82);
+    border: 1px solid rgba(229, 9, 20, 0.55);
+    border-radius: 3px;
+
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+.contract-box:hover {
+    border-color: #E50914;
+    background: rgba(20, 10, 10, 0.95);
+}
+
+.contract-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+.contract-label {
+    color: #ff4242;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contract-address {
+    color: #ffffff;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.copy-button {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.copy-button:hover {
+    color: #ff2424;
+    background: transparent;
+}
+
+
+/* =================================
+   SOLNARA - HERO 
+================================= */
+
+.hero {
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    text-align: left;
+
+    padding: 0 8%;
+    box-sizing: border-box;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(5, 0, 15, 0.90) 0%,
+            rgba(5, 0, 15, 0.55) 45%,
+            rgba(5, 0, 15, 0.12) 100%
+        ),
+        url("images/background-gaming.png");
+
+    background-size: cover;
+    background-position: center calc(50% + 135px);
+    background-repeat: no-repeat;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+    width: 100%;
+    max-width: 520px;
+    margin-left: 0;
+}
+
+/* TITLE */
+
+.hero h1 {
+    font-size: clamp(44px, 5vw, 72px);
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+/* SUBHEADING */
+
+.hero h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+/* DESCRIPTION */
+
+.hero-description {
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/* =====================================
+   SOLNARA - CYBER PURPLE THEME
+===================================== */
+
+/* WARNA UTAMA */
+:root {
+    --primary: #8B2CFF;
+    --secondary: #C026FF;
+    --glow: #A855F7;
+    --dark: #090014;
+    --white: #F4EEFF;
+}
+
+/* LABEL WELCOME */
+.hero-label {
+    color: var(--secondary);
+    text-shadow: 0 0 12px rgba(192, 38, 255, 0.7);
+}
+
+/* JUDUL ESPORTS */
+.hero h1 span {
+    color: #B66AFF;
+    text-shadow:
+        0 0 12px rgba(139, 44, 255, 0.6),
+        0 0 30px rgba(139, 44, 255, 0.35);
+}
+
+/* SUB JUDUL */
+.hero h2 {
+    color: var(--white);
+}
+
+/* DESKRIPSI */
+.hero-description {
+    color: #D4C4E8;
+}
+
+/* CONTRACT ADDRESS */
+.contract-box {
+    background: rgba(18, 5, 35, 0.88);
+    border: 1px solid rgba(168, 85, 247, 0.65);
+    box-shadow: 0 0 20px rgba(139, 44, 255, 0.12);
+    backdrop-filter: blur(12px);
+}
+
+.contract-label {
+    color: #C084FC;
+}
+
+.contract-address {
+    color: var(--white);
+}
+
+/* COPY BUTTON */
+.copy-button {
+    color: #D8B4FE;
+    transition: 0.3s;
+}
+
+.copy-button:hover {
+    color: white;
+    text-shadow: 0 0 12px #C026FF;
+}
+
+/* JOIN BUTTON */
+.hero-button {
+    background: linear-gradient(
+        135deg,
+        #7000FF,
+        #B026FF
+    );
+
+    color: white;
+    border: 1px solid #C084FC;
+
+    box-shadow:
+        0 0 15px rgba(139, 44, 255, 0.5),
+        0 0 35px rgba(139, 44, 255, 0.2);
+
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    background: linear-gradient(
+        135deg,
+        #A855F7,
+        #D946EF
+    );
+
+    box-shadow:
+        0 0 20px #A855F7,
+        0 0 45px rgba(192, 38, 255, 0.5);
+
+    transform: translateY(-3px);
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(9, 0, 20, 0.78);
+    border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+    backdrop-filter: blur(15px);
+}
+
+.menu a:hover {
+    color: #C026FF;
+    text-shadow: 0 0 10px #A855F7;
+}
+
+
+/* FIX BUTTON JOIN OUR TEAM */
+
+.hero .hero-button {
+    background: linear-gradient(
+        135deg,
+        #7000FF,
+        #9200FF,
+        #B026FF
+    ) !important;
+
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+    border: 1px solid #D8A5FF;
+
+    box-shadow:
+        0 0 12px rgba(168, 85, 247, 0.7),
+        0 0 30px rgba(139, 44, 255, 0.4);
+
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+    transition: all 0.3s ease;
+}
+
+.hero .hero-button:hover {
+    background: linear-gradient(
+        135deg,
+        #9200FF,
+        #C026FF
+    ) !important;
+
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+
+    box-shadow:
+        0 0 20px #A855F7,
+        0 0 45px rgba(192, 38, 255, 0.7);
+
+    transform: translateY(-3px);
+}
+
+
+/* CONTRACT ADDRESS - NEON PURPLE STYLE */
+
+.contract-box {
+    background: rgba(12, 5, 25, 0.92) !important;
+    border: 1px solid #A855F7 !important;
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 10px rgba(168, 85, 247, 0.25),
+        inset 0 0 15px rgba(124, 58, 237, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+.contract-box:hover {
+    border-color: #D8B4FE !important;
+    box-shadow:
+        0 0 15px rgba(168, 85, 247, 0.5),
+        0 0 30px rgba(124, 58, 237, 0.2);
+}
+
+.contract-label {
+    color: #C084FC !important;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.contract-address {
+    color: #FFFFFF !important;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.copy-button {
+    color: #FFFFFF !important;
+    font-weight: 800;
+    background: transparent !important;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+    color: #D8B4FE !important;
+    background: rgba(168, 85, 247, 0.15) !important;
+    border-color: #A855F7;
+    text-shadow: 0 0 8px #A855F7;
+}
+
+
+/* ==========================
+   FOOTER - SOLNARA
+========================== */
+
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 22px 8% 18px;
+    background: rgba(8, 3, 18, 0.72);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-top: 1px solid rgba(168, 55, 255, 0.3);
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 18px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 0 8px rgba(160, 32, 255, 0.7));
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: clamp(12px, 2vw, 28px);
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #e8def5;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #c45aff;
+    text-shadow: 0 0 12px #a020ff;
+}
+
+.footer-copyright {
+    grid-column: 1 / -1;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 16px;
+    text-align: center;
+    border-top: 1px solid rgba(168, 55, 255, 0.18);
+    color: #a99bb8;
+    font-size: 11px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 18px;
+    }
+}
+

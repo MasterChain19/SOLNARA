@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLNARA - $SNRA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/fav_solnara.png">
+    
+</head>
+
+<body>
+
+<nav class="navbar">
+    
+
+<div class="logo">
+    <img
+        src="images/SOLNARA-logo.png"
+        alt="SOLNARA - $SNRA Logo"
+        class="logo-image"
+    >
+</div>
+
+
+
+    <div class="menu">
+        <a href="#">BUY</a>
+        <a href="https://x.com/SOLNARAPORTAL">X</a>
+        <a href="https://t.me/SOLNARA_PORTAL">TELEGRAM</a>
+    </div>
+</nav>
+
+    
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-label">
+            WELCOME 
+        </p>
+
+        <h1>
+            SOLNARA AI <span>$SNRA</span>
+        </h1>
+
+        <p class="hero-description">The Organic AI Layer for Solana
+        </p>
+
+
+<!-- CONTRACT ADDRESS -->
+<div class="contract-box">
+
+    <div class="contract-info">
+
+        <span class="contract-label">
+            CONTRACT ADDRESS
+        </span>
+
+        <span class="contract-address" id="contractAddress">
+            XXXXXXXXXXXXXXX
+        </span>
+
+    </div>
+
+    <button class="copy-button" onclick="copyAddress()">
+        COPY ↗
+    </button>
+
+</div>
+
+
+        <a href="https://pump.fun/" class="hero-button" target="_blank" rel="noopener noreferrer">
+    BUY ON PUMP.FUN
+</a>
+
+    </div>
+
+</section>
+
+
+<script>
+async function copyAddress() {
+
+    const address = document
+        .getElementById("contractAddress")
+        .innerText.trim();
+
+    try {
+        await navigator.clipboard.writeText(address);
+
+        alert("Contract Address successfully copied!");
+
+    } catch (error) {
+
+        alert("Failed to copy. Please copy manually.");
+
+    }
+
+}
+</script>
+
+<!-- FOOTER -->
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            <img src="images/SOLNARA-logo.png"
+                 alt="SOLNARA - $SNRA Logo">
+        </div>
+
+        <div class="footer-links">
+           <a href="#">BUY</a>
+            <a href="https://x.com/SOLNARAPORTAL">X</a>
+            <a href="https://t.me/SOLNARA_PORTAL">TELEGRAM</a>
+        </div>
+
+        <div class="footer-copyright">
+            © 2026 SOLNARA - $SNRA. ALL RIGHTS RESERVED.
+        </div>
+
+    </div>
+</footer>
+
+
+</body>
+</html>
